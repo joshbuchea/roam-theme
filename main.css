@@ -66,7 +66,7 @@ body,
 }
 @media (max-width: 640px) {
   .roam-center,
-.roam-body-main {
+  .roam-body-main {
     margin-right: 6px;
     margin-left: 6px;
   }
@@ -77,13 +77,13 @@ body,
 }
 @media (max-width: 860px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 12px 28px 120px !important;
   }
 }
 @media (max-width: 640px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 10px 20px 120px !important;
   }
 }
@@ -282,7 +282,7 @@ div.roam-article .rm-level3 span > a.rm-alias--external:after {
   background: var(--popup-background-color) !important;
 }
 
-.bp3-elevation-3 div.dont-unfocus-block[style*=background] {
+.bp3-elevation-3 div.dont-unfocus-block[style*="background"] {
   background: var(--secondary-background-color) !important;
 }
 
@@ -304,7 +304,8 @@ body,
 div,
 textarea,
 .level2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 iframe {
@@ -368,10 +369,10 @@ span.checkmark {
   padding: 0 !important;
   margin: 0 !important;
 }
-.kanban-board .kanban-column:not([style*=background]) {
+.kanban-board .kanban-column:not([style*="background"]) {
   background: transparent !important;
 }
-.kanban-board .kanban-column[style*=background] {
+.kanban-board .kanban-column[style*="background"] {
   background: var(--secondary-background-color) !important;
 }
 .kanban-board .kanban-column .kanban-title {
@@ -387,7 +388,8 @@ span.checkmark {
 }
 .kanban-board .kanban-column .kanban-card {
   background: var(--cards-background-color) !important;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7), 0px 4px 7px -1px rgba(0, 0, 0, 0.07) !important;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
+    0px 4px 7px -1px rgba(0, 0, 0, 0.07) !important;
   border-radius: 4px !important;
   padding: 6px 10px !important;
   margin: 0px 6px 12px !important;
@@ -416,21 +418,41 @@ span.checkmark {
 }
 
 .CodeMirror {
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .log-button:hover,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page:hover {
   background-color: transparent !important;
   color: var(--c1) !important;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
 .bp3-minimal > div {
   color: var(--c2) !important;
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
 }
 
 .roam-sidebar-content {
@@ -450,7 +472,10 @@ span.checkmark {
   color: var(--c2) !important;
 }
 
-#roam-right-sidebar-content .sidebar-content > div > div[style*=border-bottom] {
+#roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div[style*="border-bottom"] {
   border-bottom: 1px solid var(--subtle-border-color) !important;
 }
 
@@ -459,12 +484,18 @@ span.checkmark {
 }
 .starred-pages-wrapper .flex-h-box,
 .starred-pages-wrapper .flex-h-box span {
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
   opacity: 0.6 !important;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page {
   padding: 6px 24px 6px !important;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .shortcut {
@@ -473,7 +504,11 @@ span.checkmark {
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row {
   padding: 12px 0 0 20px;
 }
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .top-row:hover {
   background-color: inherit;
 }
 
@@ -532,9 +567,37 @@ span.checkmark {
 .bp3-popover-content div > div > .flex-h-box div > div > strong,
 .bp3-popover-content div > div > div > button,
 .bp3-popover-content > ul > div,
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a div > div > .flex-h-box div > div > span,
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a div > div > .flex-h-box div > div > strong,
-.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a div > div > div > button,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .rm-graph-dropdown
+  a
+  div
+  > div
+  > .flex-h-box
+  div
+  > div
+  > span,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .rm-graph-dropdown
+  a
+  div
+  > div
+  > .flex-h-box
+  div
+  > div
+  > strong,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .rm-graph-dropdown
+  a
+  div
+  > div
+  > div
+  > button,
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a > ul > div {
   color: var(--c1) !important;
 }
@@ -558,7 +621,7 @@ span.checkmark {
   background: none !important;
 }
 
-.rm-menu-item[style*=background-color],
+.rm-menu-item[style*="background-color"],
 .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting:hover {
   background-color: var(--secondary-background-color) !important;
 }
